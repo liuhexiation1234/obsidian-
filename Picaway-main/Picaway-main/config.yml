@@ -1,0 +1,14 @@
+scan:
+  directory: "C:\\Users\\16342\\Documents\\Obsidian Vault"
+  match:
+    md_regex: ".*\\.md$"
+    # 只匹配 Obsidian 格式
+    pic_regex: "!\\[\\[(.*?\\.(?:png|jpg|jpeg|gif|bmp|svg|webp))"
+    result_filepath: "output.json"
+
+migrate:
+  # picgo相关配置
+  picgo:
+    # 上传地址
+    server_url: "http://127.0.0.1:36677/upload"
+
